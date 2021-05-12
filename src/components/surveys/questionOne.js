@@ -1,6 +1,6 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 
-const json = {
+let json = {
     "title": "Personal information for Tax declaration purposes",
     "pages": [
         {

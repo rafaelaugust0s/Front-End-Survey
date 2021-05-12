@@ -4,6 +4,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import MySurvey from './components/views/surveyOne'
 import Header from './components/common/Header'
 import Footer from "./components/common/Footer"
+import myForm from './components/views/myForm'
 
 function App() {
   return (
@@ -14,14 +15,17 @@ function App() {
               </div>
               <BrowserRouter>
                   <Switch>
-                      <Route path="/">
+                      <Route path="/" >
                    <MySurvey/>
+                      </Route>
+                      <Route path="/myForm" >
+                        <myForm/>
                       </Route>
                   </Switch>
               </BrowserRouter>
-              {/*<div className="App" class= "col-12">*/}
-              {/*    <MySurvey/>*/}
-              {/*</div>*/}
+              <div path ="/myForm">
+                  <myForm/>
+              </div>
               <div className="col-12">
                   <Footer/>
               </div>
