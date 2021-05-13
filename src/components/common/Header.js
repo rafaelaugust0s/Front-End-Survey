@@ -1,5 +1,4 @@
 import React from "react";
-
 const Header=()=>{
 
     return (
@@ -14,8 +13,8 @@ const Header=()=>{
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-                                <a className="nav-item nav-link" href="/">Customers Info</a>
+                                <a className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
+                                <a className="nav-item nav-link" href="/MyForm">Customers Info</a>
                                 <a className="nav-item nav-link" href="#">Spouse Info</a>
                                 <a className="nav-item nav-link" href="#">Dependents Info</a>
                             </div>

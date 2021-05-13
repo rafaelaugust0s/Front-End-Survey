@@ -7,5 +7,4 @@ return(
     <MySurvey/>
 )
 }
-
 export default surveyOne;

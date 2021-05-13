@@ -43,32 +43,36 @@ let json = {
                             "elements": [
                                 {
                                     "type": "text",
-                                    "name": "name_of_data_collector ",
-                                    "title": "Name "
+                                    "name": "name ",
+                                    "title": "name"
                                 },
-                                // {
-                                //     "type": "text",
-                                //     "name": "data_collector_institution",
-                                //     "title": "Data collector Institution"
-                                // },
-                                // {
-                                //     "type": "text",
-                                //     "name": "data_collector_telephone_number",
-                                //     "title": "Data collector telephone number",
-                                //     "inputType": "tel"
-                                // },
+
                                 {
                                     "type": "text",
                                     "name": "email",
                                     "title": "Email",
                                     "inputType": "email"
                                 },
-                                // {
-                                //     "type": "text",
-                                //     "name": "form_completion_date",
-                                //     "title": "Form completion date",
-                                //     "inputType": "date"
-                                // }
+                                {
+                                                    "type": "panel",
+                                                    "name": "DOB",
+                                                    "elements": [
+                                                        {
+                                                            "type": "text",
+                                                            "name": "dateOfBirth",
+                                                            "visibleIf": "{case_identifier_information_patient_date_of_birth_checkbox} empty",
+                                                            "titleLocation": "hidden",
+                                                            "inputType": "date"
+                                                        }, {
+                                                            "type": "checkbox",
+                                                            "name": "DOB",
+                                                            "startWithNewLine": false,
+                                                            "titleLocation": "hidden",
+                                                            "choices": ["Unknown"]
+                                                        }
+                                                    ],
+                                                    "title": "Date of Birth"
+                                },
                             ],
                             "title": "Customer Information",
                             "showNumber": true,
@@ -122,25 +126,7 @@ let json = {
         //                         }
         //                     ],
         //                     "colCount": 3
-        //                 }, {
-        //                     "type": "panel",
-        //                     "name": "case_identifier_information_patient_date_of_birth_panel",
-        //                     "elements": [
-        //                         {
-        //                             "type": "text",
-        //                             "name": "case_identifier_information_patient_date_of_birth_date",
-        //                             "visibleIf": "{case_identifier_information_patient_date_of_birth_checkbox} empty",
-        //                             "titleLocation": "hidden",
-        //                             "inputType": "date"
-        //                         }, {
-        //                             "type": "checkbox",
-        //                             "name": "case_identifier_information_patient_date_of_birth_checkbox",
-        //                             "startWithNewLine": false,
-        //                             "titleLocation": "hidden",
-        //                             "choices": ["Unknown"]
-        //                         }
-        //                     ],
-        //                     "title": "Date of Birth"
+        //
         //                 }, {
         //                     "type": "text",
         //                     "name": "case_identifier_information_patient_telephone_mobile_number",
