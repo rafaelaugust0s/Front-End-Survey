@@ -16,7 +16,10 @@
   margin: 10px;
   padding: 100px;
 }
-
+.btn btn-success text-righ{
+  padding: 1px;
+  margin: 5px !important;
+}
 
 
 

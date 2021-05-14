@@ -9,6 +9,9 @@ const sendData= async (payload)=>{
 
         let response =await axios.post(`${process.env.REACT_APP_BACKEND_API}/customers`, payload)
         console.log(payload)
+
+    //save customer ID in local storage
+    localStorage.setItem("customer_id", response.data.NewCustomer._id)
 }
 
 const MySurvey= ()=>{

@@ -5,6 +5,7 @@ import MySurvey from './components/views/surveyOne'
 import Header from './components/common/Header'
 import Footer from "./components/common/Footer"
 import MyForm from './components/views/MyForm'
+import Update from './components/views/update'
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
 
                       <Route path="/MyForm" exact>
                         <MyForm/>
+                      </Route>
+                      <Route path="/update" exact>
+                          <Update/>
                       </Route>
                   </Switch>
               </BrowserRouter>
