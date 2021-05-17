@@ -2,8 +2,6 @@
   text-align: center;
 }
 
-
-
 .App {
   background-color: white;
   min-height: 100vh;
@@ -12,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: blue;
   margin: 10px;
   padding: 100px;
 }
@@ -20,6 +18,118 @@
   padding: 1px;
   margin: 5px !important;
 }
+p {
+  color: black;
+}
+  h6{
+    margin-top: 5px!important;
+    color: red;
+  }
 
+body{
+  height: 50px!important;
+  background:  #34495E !important;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+.table{
+  background: white !important;
+  border-radius: 1px!important;
+  margin-top: 1px!important;
+  padding: 90px!important;
+  padding-top: 50px!important;
+  padding-right: 5px!important;
+  padding-left: 5px!important;
 
+}
+.btn{
+  font-size: 10px!important;
+  margin: 5px!important;
+
+}
+.update{
+  background: white !important;
+  padding: 200px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-top: 1px!important;
+  border-color: red!important;
+  /*margin: 20px;*/
+  /*border-radius: 5px;*/
+
+}
+
+.sv_main .sv_container{
+  color: black !important;
+}
+
+.sv_main input[type="button"], .sv_main button{
+
+  background: mediumpurple!important;
+}
+.sv_main .sv_header {
+  color: black !important;
+}
+.sv_main .sv_body  {
+  border-top: 2px solid mediumpurple!important;
+}
+.sv_progress-buttons__list li.sv_progress-buttons__list-element--current::before{
+  border-color: mediumpurple!important;
+}
+.sv_progress-buttons__list li.sv_progress-buttons__list-element--passed + li::after{
+  background-color: dimgrey!important;
+}
+.sv_progress-buttons__list li.sv_progress-buttons__list-element--passed::before{
+  border-color: mediumpurple!important;
+  /*background-color: mediumpurple!important;*/
+}
+.sv_progress-buttons__list li::before{
+}
+.sv_main .sv_container .sv_body{
+  padding: 100px!important;
+  padding-top: 10px!important;
+  padding-left: 300px!important;
+  padding-right: 300px!important;
+}
+
+/*.bg-light{*/
+/*  background-color: red !important;*/
+/*  margin: 10px!important;*/
+/*  position: relative;*/
+/*  !*padding-left: 100px!important;*!*/
+/*  !*padding-right: 100px!important;*!*/
+/*  !*margin-left: 1px !important;*!*/
+
+/*}*/
+.nav bar{
+  background-color: #34495E !important;
+}
+.container-header{
+  background-color:#34495E ;
+}
+.col-12 header{
+  background-color: red!important;
+}
+.navbar-light .navbar-nav .nav-link{
+  font-size: 20px;
+  color: white;
+  text-align: right!important;
+}
+.navbar-brand{
+  color: white!important;
+}
+.nav-item nav-link{
+  color: white!important;
+}
+.row-customer{
+  font-weight: lighter !important;
+  font-size: 30px!important;
+  background-color: lightgray!important;
+  border-radius-top: 5px;
+  padding: 20px;
+  /*padding-top: 60px;*/
+  border-bottom-color:  red!important;
+  margin-top: 30px!important;
+}

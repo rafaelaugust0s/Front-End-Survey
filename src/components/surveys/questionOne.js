@@ -1,7 +1,7 @@
 import React from "react";
 
 let json = {
-    "title": "Personal information for Tax declaration purposes",
+    "title": "Personal Information For Tax Declaration Purposes",
     "pages": [
         {
             "name": "page1",
@@ -44,7 +44,7 @@ let json = {
                                 {
                                     "type": "text",
                                     "name": "name ",
-                                    "title": "name"
+                                    "title": "Name"
                                 },
 
                                 {
@@ -53,6 +53,7 @@ let json = {
                                     "title": "Email",
                                     "inputType": "email"
                                 },
+
                                 {
                                                     "type": "panel",
                                                     "name": "DOB",
@@ -77,10 +78,52 @@ let json = {
                             "title": "Customer Information",
                             "showNumber": true,
                             "showQuestionNumbers": "off"
+                        },
+                        {
+                            "type": "text",
+                            "name": "address ",
+                            "title": "Address"
+                        },
+                        {
+                            "type": "text",
+                            "name": "postalCode ",
+                            "title": "Postal Code"
+                        },   {
+                            "type": "text",
+                            "name": "city ",
+                            "title": "City"
+                        },{
+                            "type": "text",
+                            "name": "province ",
+                            "title": "Province"
+                        },{
+                            "type": "text",
+                            "name": "phone",
+                            "title": "Phone"
+                        },{
+                            "type": "text",
+                            "name": "sin",
+                            "title": "SIN"
+                        },
+                        {
+                            type: "dropdown",
+                            name: "maritalStatus",
+                            title: "What is your marital status?",
+                            isRequired: true,
+                            colCount: 0,
+                            choices: [
+                                "single",
+                                "married",
+                                "divorced",
+                                "common-law",
+                                "widower",
+                            ]
                         }
                     ],
                     "startWithNewLine": false
-                }
+
+                },
+
             ]
         // }, {
         //     "name": "page2",

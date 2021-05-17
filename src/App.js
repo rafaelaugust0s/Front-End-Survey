@@ -23,14 +23,12 @@ function App() {
                       <Route path="/MyForm" exact>
                         <MyForm/>
                       </Route>
-                      <Route path="/update" exact>
+                      <Route path="/update/" exact>
                           <Update/>
                       </Route>
                   </Switch>
               </BrowserRouter>
-              {/*<div className ="col-12">*/}
-              {/*    <MyForm/>*/}
-              {/*</div>*/}
+              {<br/>}
               <div className="col-12">
                   <Footer/>
               </div>
