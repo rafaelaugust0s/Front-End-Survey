@@ -22,22 +22,7 @@ let json = {
                     "name": "first_page_container_panel",
                     "elements": [
 
-                         {
-                            "type": "panel",
-                            "name": "current_status_panel",
-                            "elements": [
-                                // {
-                                //     "type": "boolean",
-                                //     "name": "current_status",
-                                //     "titleLocation": "hidden",
-                                //     "labelTrue": "Alive",
-                                //     "labelFalse": "Dead",
-                                //     "hideNumber": true
-                                // }
-                            ],
-                            "title": "Current Status",
-                            "showNumber": true
-                        }, {
+                    {
                             "type": "panel",
                             "name": "Customer info",
                             "elements": [
@@ -106,9 +91,27 @@ let json = {
                             "title": "SIN"
                         },
                         {
+                            "type": "panel",
+                            "name": "current_status_panel",
+                            "elements": [
+                                {
+                                    "type": "boolean",
+                                    "name": "current_status",
+                                    "titleLocation": "hidden",
+                                    "labelTrue": "Single",
+                                    "labelFalse": "Married",
+                                    "hideNumber": true
+                                }
+                            ],
+                            "title": "Current Status",
+                            "showNumber": false
+                        },
+                        {
                             type: "dropdown",
                             name: "maritalStatus",
                             title: "What is your marital status?",
+                            "visibleIf": "{current_status} = false",
+
                             isRequired: true,
                             colCount: 0,
                             choices: [
@@ -118,13 +121,16 @@ let json = {
                                 "common-law",
                                 "widower",
                             ]
-                        }
+                        },
+
+
                     ],
                     "startWithNewLine": false
 
                 },
 
             ]
+
         // }, {
         //     "name": "page2",
         //     "navigationTitle": "Marital Status",
@@ -340,14 +346,14 @@ let json = {
         //             "labelFalse": "No",
         //             "hideNumber": true
         //         },
-        //         // {
-        //         //     "type": "image",
-        //         //     "name": "third_page_image",
-        //         //     "imageLink": "/Content/Images/examples/covid/03.png",
-        //         //     "imageHeight": 690,
-        //         //     "imageWidth": 500,
-        //         //     "width": "600px"
-        //         // },
+        //         {
+        //             "type": "image",
+        //             "name": "third_page_image",
+        //             "imageLink": "/Content/Images/examples/covid/03.png",
+        //             "imageHeight": 690,
+        //             "imageWidth": 500,
+        //             "width": "600px"
+        //         },
         //         {
         //             "type": "panel",
         //             "name": "customers with dependents",

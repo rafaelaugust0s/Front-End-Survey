@@ -1,24 +1,13 @@
 import React, {useEffect,useState} from "react"
-import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import 'survey-react/survey.css';
+import {Container,Table,}from 'react-bootstrap';
 // import { MdDeleteForever } from "react-icons/fa";
 import axios from "axios";
 import Update from "./update";
 
-import * as PropTypes from "prop-types";
 
 
-class Tableable extends React.Component {
-    render() {
-        return null;
-    }
-}
-
-Tableable.propTypes = {
-    className: PropTypes.string,
-    children: PropTypes.node
-};
 
 
 
@@ -70,56 +59,60 @@ const MyForm=  ()=> {
 
 
     return (
-        <div className="container">
-            <div className="row-customer">
-                <div className="col-12 text-left">
-                    <p>Customer Information</p>
+        <Container>
+
+            <div className="container">
+
+                <form className= "table">{<br/>}
+                    <div className="row-customer">
+                        <div className="col-12 text-left">
+                            <p>Customer Information</p>
+                        </div>
+                    </div>
+                    <Table responsive striped bordered className="noWrap">
+                        <thead>
+                            <tr className="tableheader">
+                                <th>NAME</th>
+                                <th>EMAIL</th>
+                                <th>DATE OF BIRTH </th>
+                                <th>ADDRESS </th>
+                                <th>POSTAL CODE </th>
+                                <th>CITY</th>
+                                <th>PROVINCE</th>
+                                <th>PHONE</th>
+                                <th>SIN</th>
+                                <th>MARITAL STATUS</th>
+
+                                <th>   </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{getCustomer.customer.name}</td>
+                                <td>{getCustomer.customer.email}</td>
+                                <td>{getCustomer.customer.dateOfBirth}</td>
+                                <td>{getCustomer.customer.address}</td>
+                                <td>{getCustomer.customer.postalCode}</td>
+                                <td>{getCustomer.customer.city}</td>
+                                <td>{getCustomer.customer.province}</td>
+                                <td>{getCustomer.customer.phone}</td>
+                                <td>{getCustomer.customer.sin}</td>
+                                <td>{getCustomer.customer.maritalStatus}</td>
+
+                                <td>
+                                    <a href="/update"> <button type="button"  className="btn btn-success text-right"   >UPDATE</button></a>
+                                    <a href="/"> <button type="button" onClick={deleteCustomer} className="btn btn-danger text-right" >DELETE</button></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </form>
+                <div className="col-12" id="update">
+                    {/*<Update/>*/}
                 </div>
             </div>
-            <form className= "table">{<br/>}
 
-                <Table>
-                    <Thead>
-                    <Tr>
-                           <Th>NAME</Th>
-                        <Th>EMAIL</Th>
-                        <Th>DATE OF BIRTH </Th>
-                        <Th>ADDRESS </Th>
-                        <Th>POSTAL CODE </Th>
-                        <Th>CITY</Th>
-                        <Th>PROVINCE</Th>
-                        <Th>PHONE</Th>
-                        <Th>SIN</Th>
-                        <Th>MARITAL STATUS</Th>
-
-                        <Th>   </Th>
-                    </Tr>
-                    </Thead>
-                    <Tbody>
-                    <Tr>
-                        <Td>{getCustomer.customer.name}</Td>
-                        <Td>{getCustomer.customer.email}</Td>
-                        <Td>{getCustomer.customer.dateOfBirth}</Td>
-                        <Td>{getCustomer.customer.address}</Td>
-                        <Td>{getCustomer.customer.postalCode}</Td>
-                        <Td>{getCustomer.customer.city}</Td>
-                        <Td>{getCustomer.customer.province}</Td>
-                        <Td>{getCustomer.customer.phone}</Td>
-                        <Td>{getCustomer.customer.sin}</Td>
-                        <Td>{getCustomer.customer.maritalStatus}</Td>
-
-                        <Td>
-                            <a href="/update"> <button type="button"  className="btn btn-success text-right"   >UPDATE</button></a>
-                            <a href="/"> <button type="button" onClick={deleteCustomer} className="btn btn-danger text-right" >DELETE</button></a>
-                        </Td>
-                    </Tr>
-                    </Tbody>
-                </Table>
-            </form>
-            <div className="col-12" id="update">
-                {/*<Update/>*/}
-            </div>
-        </div>
+        </Container>
     )
 }
 export default MyForm
