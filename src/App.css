@@ -146,6 +146,8 @@ body{
   color: white;
   background-color: #34495E;
 }
-.table-bordered td, .table-bordered th{
+.table-bordered th{
+  border-style: solid!important;
+  /*border-color: mediumpurple!important;*/
   border-top: mediumpurple!important;
 }

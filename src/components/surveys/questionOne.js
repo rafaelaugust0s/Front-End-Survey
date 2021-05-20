@@ -11,7 +11,7 @@ let json = {
                 // {
                 //     "type": "image",
                 //     "name": "first_page_image",
-                //     // "imageLink": "/Content/Images/examples/covid/01.png",
+                //     "imageLink": "/Content/Images/examples/covid/01.png",
                 //     "imageFit": "none",
                 //     "imageHeight": 726,
                 //     "imageWidth": 500,
@@ -125,26 +125,28 @@ let json = {
 
 
                     ],
-                    "startWithNewLine": false
+                        "startWithNewLine": false
 
                 },
 
             ]
 
-        // }, {
-        //     "name": "page2",
-        //     "navigationTitle": "Marital Status",
-        //     "navigationDescription": "Spouse Info",
-        //     "elements": [
-        //         {
-        //             "type": "boolean",
-        //             "name": "Marital Status",
-        //             "title": "Are you single?",
-        //             "isRequired": true,
-        //             "labelTrue": "Yes",
-        //             "labelFalse": "No",
-        //             "hideNumber": true
-        //         }, {
+        },
+        {
+            "name": "page2",
+            "navigationTitle": "Marital Status",
+            "navigationDescription": "Spouse Info",
+            "elements": [
+                {
+                    "type": "boolean",
+                    "name": "Marital Status",
+                    "title": "Are you single?",
+                    "isRequired": true,
+                    "labelTrue": "Yes",
+                    "labelFalse": "No",
+                    "hideNumber": true
+                },
+                // {
         //             "type": "panel",
         //             "name": "case_identifier_information ",
         //             "elements": [
@@ -254,7 +256,7 @@ let json = {
         //                     ],
         //                     "colCount": 3
         //                 }
-        //             ],
+                    ],
         //             "visibleIf": "{is_the_person_providing_the_information_is_the_patient} = true",
         //             "title": "Case Identifier Information",
         //             "showNumber": true,

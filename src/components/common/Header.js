@@ -16,7 +16,7 @@ const Header=()=>{
                                 <a className="nav-item nav-link text-white" href="/">Home <span className="sr-only">(current)</span></a>
                                 <a className="nav-item nav-link text-white" href="/MyForm">Customers Info</a>
                                 <a className="nav-item nav-link text-white" href="#">Spouse Info</a>
-                                <a className="nav-item nav-link text-white" href="#">Dependents Info</a>
+                                <a className="nav-item nav-link text-white  " href="#">Dependents Info</a>
                             </div>
                         </div>
                     </nav>
