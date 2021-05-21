@@ -1,11 +1,13 @@
 # Front-End-Survey
-http://localhost:3000/
+ DEPLOY LINK https://vercel.com/rafaelaugust0s/front-end-survey/Egr1xRigPxysnLSoiqzLAnu2Ms2A
+ 
+ CREATE http://localhost:3000/
 
-http://localhost:3000/MyForm
+ SHOW BY ID http://localhost:3000/MyForm
 
-http://localhost:3000/update
+ UPDATE / DELETE http://localhost:3000/update
 
-DEPLOY LINK https://vercel.com/rafaelaugust0s/front-end-survey/Egr1xRigPxysnLSoiqzLAnu2Ms2A
+
 
 GET router.get('/', CustomerController.index)
 STORE router.post('/', CustomerController.store)
